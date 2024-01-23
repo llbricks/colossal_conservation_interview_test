@@ -15,9 +15,9 @@ class yolov5Dataset(Dataset):
         self.images = [file for file in os.listdir(directory) if file.endswith('.jpg') or file.endswith('.png')]
 
         self.transform = transforms.Compose([
+            LetterBox(size=(640,640), stride=32),  # Use the custom Letterbox transform
             transforms.ColorJitter(brightness=0.5, contrast=0.5, saturation=0.5, hue=0.5),
             transforms.RandomHorizontalFlip(),
-            LetterBox(size=(640,640), stride=32),  # Use the custom Letterbox transform
             transforms.ToTensor()  # Convert to tensor
         ])
 

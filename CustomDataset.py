@@ -7,7 +7,7 @@ from PIL import Image
 from torchvision import transforms
 from torch.utils.data import Dataset, DataLoader
 from torchvision.transforms import functional as F
-from yolov5.utils.augmentations import LetterBox  # Adjust import based on your YOLOv5 installation
+from yolov5.utils.augmentations import LetterBox  
 
 class yolov5Dataset(Dataset):
     def __init__(self, directory):

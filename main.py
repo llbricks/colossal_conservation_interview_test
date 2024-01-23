@@ -2,6 +2,7 @@ import CustomDataset
 import torch
 import numpy as np
 import cv2
+import os
 from torch.utils.data import Dataset, DataLoader
 
 image_dir = './imgs'

@@ -12,7 +12,7 @@ if not os.path.exists(output_dir): os.makedirs(output_dir)
 dataset = CustomDataset.yolov5Dataset(image_dir)
 dataloader = DataLoader(dataset, batch_size=1, shuffle=True)
 
-for batch in dataloader:
+for i,batch in enumerate(dataloader):
 
     # Get the first image from the batch and permute the dimensions
     image = batch[0]
@@ -30,5 +30,5 @@ for batch in dataloader:
     image_np = cv2.cvtColor(image_np, cv2.COLOR_RGB2BGR)
 
     # Save the image
-    cv2.imwrite('output/{}.jpg'.format(1), image_np)
+    cv2.imwrite('output/{}.jpg'.format(i), image_np)
 

@@ -4,7 +4,7 @@ For this task, we are cleaning up our tracker code to make it run faster, and wi
 
 0) download the images in this email, you can use these as your test images 
 1) download the repo
-2) Install the required packages, I've included an env.yml for a conda environment if you want to initialize from there, or you can use the requrements.txt file (untested by me) 
+2) Install the required packages, I've included an env.yml for a conda environment if you want to initialize from there, or you can use the requrements.txt file
 3) run the main.py code on the images from the email.  
   - The resulting images should be saved in the 'output' folder in the github directory. These are images preprocessed with our current dataloader. 
 4) Next, we want to add the LetterBox augmentation function from the yolov5 package to our preprocessing, but we are getting an error implementing it.

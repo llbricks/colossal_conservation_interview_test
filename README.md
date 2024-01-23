@@ -11,7 +11,7 @@ For this task, we are cleaning up our tracker code to make it run faster, and wi
   - install the yolov5 package or download the yolov5 repository (This may not be necessary) 
   - pull the ‘development’ branch of the repo, and run main again.
    * Branch info: The only changes to the code base from the branch change are two lines of code in CustomDataset.py:
-     1) importing the letterbox function from the yolov5 package
-     2) adding the letterbox function to our yolov5dataset class
+     1) importing the letterbox function from the yolov5 package (line 10) 
+     2) adding the letterbox function to our yolov5dataset transform (line 18)
 6) Fix the error that occurs with this addition, so that it produces the preprocessed images again. You can edit main or CustomDataset.py
 7) Email the final images back to me! 
